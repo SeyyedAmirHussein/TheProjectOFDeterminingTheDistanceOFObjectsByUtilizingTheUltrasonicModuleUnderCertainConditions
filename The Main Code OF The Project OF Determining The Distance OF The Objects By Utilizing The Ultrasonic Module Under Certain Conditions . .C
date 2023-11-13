@@ -10,7 +10,7 @@
 #include <LiquidCrystal.h>                                                                                                              // Library Required for this Project .
 const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;                                                                            // Definition of Different Bases .
 int Time, Trigger = 9, Echo = 10;                                                                                                     // Basic Definition : Numbers 9 , and 10 . :
-float Distance = Time * 0.034 / 2;                                                                                                   // Set Value to Distance .
+float Distance;                                                                                                   // Set Value to Distance .
 LiquidCrystal LCD (rs, en, d4, d5, d6, d7);                                                                                         // Definition of Different Bases .
 
 
