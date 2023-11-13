@@ -10,7 +10,7 @@
 #include <LiquidCrystal.h>                                                                                                              // Library Required for this Project .
 const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;                                                                            // Definition of Different Bases .
 int Time, Trigger = 9, Echo = 10;                                                                                                     // Basic Definition : Numbers 9 , and 10 . :
-float Distance;                                                                                                   // Set Value to Distance .
+float Distance;                                                                                                                      // Set Value to Distance .
 LiquidCrystal LCD (rs, en, d4, d5, d6, d7);                                                                                         // Definition of Different Bases .
 
 
@@ -30,21 +30,21 @@ void loop () {
 
 
   digitalWrite (Trigger, LOW);
-  delayMicroseconds (2);                                                                                           // Running the Delay Function (2 Microseconds) . :
+  delayMicroseconds (2);                                                                                           // Running The Delay Function (2 Microseconds) . :
   digitalWrite (Trigger, HIGH);
-  delayMicroseconds (10);                                                                                        // Running the Delay Function (10 Microseconds) . :
+  delayMicroseconds (10);                                                                                        // Running The Delay Function (10 Microseconds) . :
   digitalWrite (Trigger, LOW);
   Time = pulseIn (Echo, HIGH);
   Distance = Time * 0.034 / 2;                                                                                // Set Value to Distance .
-  Serial.print (" Distance : ");                                                                             // Show the Desired Message .
-  Serial.println (Distance);                                                                                // Show the Desired Message .
-  LCD.setCursor (0, 0);                                                                                    // To run Regularly and Display the OUTPUT Below .
-  LCD.print (" Distance : ");                                                                             // Show the Desired Message .
-  LCD.print (Distance);                                                                                  // Show the Desired Message .
+  Serial.print (" Distance : ");                                                                             // Show The Desired Message .
+  Serial.println (Distance);                                                                                // Show The Desired Message .
+  LCD.setCursor (0, 0);                                                                                    // To run Regularly and Display The OUTPUT Below .
+  LCD.print (" Distance : ");                                                                             // Show The Desired Message .
+  LCD.print (Distance);                                                                                  // Show The Desired Message .
 
 
-  delay (500);                                                                                         // Running the Delay Function (0.5 Seconds) . :
-  LCD.clear ();                                                                                       // Clears the LCD Screen and Positions the Cursor in the Upper-Left Corner .
+  delay (500);                                                                                         // Running The Delay Function (0.5 Seconds) . :
+  LCD.clear ();                                                                                       // Clears The LCD Screen and Positions The Cursor in the Upper-Left Corner .
   float X = map (Distance, 4, 30, 255, 0);
   if (Distance <= 4)
 
@@ -52,7 +52,7 @@ void loop () {
   {
 
 
-  digitalWrite (6, HIGH);
+  digitalWrite (6, HIGH);                                                                     // Turn on The LED .
 
 
   }
@@ -64,7 +64,7 @@ void loop () {
   {
 
 
-  digitalWrite (6, LOW)
+  digitalWrite (6, LOW);                                                          // Turn off The LED .
 
 
   }
