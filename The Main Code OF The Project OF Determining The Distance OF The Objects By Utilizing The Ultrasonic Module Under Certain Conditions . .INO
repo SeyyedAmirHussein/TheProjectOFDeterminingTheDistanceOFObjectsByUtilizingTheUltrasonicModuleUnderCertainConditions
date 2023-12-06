@@ -1,8 +1,8 @@
 // The Project OF Determining The Distance OF The Objects By Utilizing The Ultrasonic Module Under Certain Conditions .
 
-// The Main Code OF The Project OF Determining The Distance OF The Objects By Utilizing The Ultrasonic Module Under Certain Conditions . .C
-
 // In this program, We want to determine the distance of the Objects by utilizing the Ultrasonic Module and then display it on the LCD Screen. If the distance of the Objects is " Four Centimeters (4 CM) " or fewer than " Four Centimeters (4 CM) " , the LED Light will turn on One Hundred Percent (100 %) , but if the distance of the Objects is " Thirty-Four Centimeters (34 CM) " or more than " Thirty-Four Centimeters (34 CM) " , the LED Light will turn off One Hundred Percent (100 %) .
+
+// The Main Code OF The Project OF Determining The Distance OF The Objects By Utilizing The Ultrasonic Module Under Certain Conditions . .INO .
 
 
 
